@@ -41,6 +41,13 @@ function alias_git_switch_branch {
 function alias_clear_screen {
 	clear
 }
+function alias_poweroff {
+	Stop-Computer -ComputerName localhost
+}
+function alias_reboot {
+	Restart-Computer
+}
+
 
 Set-Alias gs alias_git_status
 Set-Alias gpush alias_git_push
@@ -53,5 +60,7 @@ Set-Alias glog alias_git_log
 Set-Alias glp alias_git_log_pretty
 Set-Alias gsb alias_git_switch_branch
 Set-Alias cl alias_clear_screen
+Set-Alias poweroff alias_poweroff
+Set-Alias reboot alias_reboot
 
 clear
