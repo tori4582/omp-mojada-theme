@@ -2,37 +2,45 @@
     "blocks": [{
             "type": "prompt",
             "alignment": "left",
+            "newline": true,
             "segments": [{
                     "type": "os",
-                    "style": "plain",
-                    "foreground": "#26C6DA",
+                    "style": "diamond",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "foreground": "#0077c2",
+                    "background": "#fbfbfb",
                     "properties": {
-                        "prefix": " ",
-                        "postfix": "  ",
-                        "macos": "mac"
+                        "prefix": "",
+                        "postfix": " ",
+                        "macos": "mac",
+                        "windows": ""
                     }
                 },
                 {
                     "type": "session",
                     "style": "powerline",
-                    "foreground": "#ffffff",
-                    "background": "#c386f1",
-                    "powerline_symbol": "<transparent></>",
+                    "foreground": "#0077c2",
+                    "background": "#fbfbfb",
+                    "powerline_symbol": "",
                     "trailing_diamond": "",
                     "properties": {
-                        "prefix": "   ",
+                        "prefix": "",
                         "postfix": " ",
-                        "display_host": false
+                        "display_host": true,
+                        "host_color": "#e06c75",
+                        "user_info_separator": "<#000000>@</>"
+
                     }
                 },
                 {
                     "type": "root",
                     "style": "powerline",
                     "powerline_symbol": "",
-                    "foreground": "#111111",
-                    "background": "#ffff66",
+                    "foreground": "#ffffff",
+                    "background": "#e06c75",
                     "properties": {
-                        "root_icon": " ",
+                        "root_icon": " ",
                         "postfix": "\u2800"
                     }
                 },
@@ -43,10 +51,12 @@
                     "foreground": "#ffffff",
                     "background": "#0077c2",
                     "properties": {
-                        "prefix": "   ",
+                        "style": "letter",
+                        "folder_separator_icon": "/",
+                        "prefix": "  ",
                         "home_icon": "~",
-                        "folder_separator_icon": " \uE0b1 ",
-                        "style": "folder"
+                        "enable_hyperlink": true,
+                        "max_depth": 2
                     }
                 },
                 {
@@ -72,7 +82,7 @@
                     "foreground": "#FFD54F",
                     "properties": {
                         "prefix": " ",
-                        "text": "$"
+                        "text": "{{if .Root}}#{{else}}${{end}}"
                     }
                 }
             ]
@@ -80,28 +90,25 @@
         {
             "type": "rprompt",
             "segments": [{
-                    "type": "ytm",
-                    "style": "powerline",
-                    "powerline_symbol": "\uE0B2",
-                    "invert_powerline": true,
-                    "foreground": "#111111",
-                    "background": "#1BD760",
+                    "type": "exit",
+                    "style": "plain",
+                    "foreground": "#ffffff",
                     "properties": {
-                        "prefix": " \uF167 ",
-                        "paused_icon": " ",
-                        "playing_icon": " "
+                        "display_exit_code": false,
+                        "always_enabled": true,
+                        "error_icon": "<#ff0000></>",
+                        "success_icon": "<#00ff00></>",
+                        "prefix": ""
                     }
                 },
                 {
                     "type": "executiontime",
-                    "style": "powerline",
+                    "style": "plain",
                     "foreground": "#ffffff",
-                    "leading_diamond": " ",
-                    "trailing_diamond": "",
                     "properties": {
                         "always_enabled": true,
-                        "prefix": "[\ufa1e",
-                        "postfix": "] "
+                        "prefix": "",
+                        "postfix": " "
                     }
                 },
                 {
@@ -113,14 +120,14 @@
                     "background": "#f36943",
                     "properties": {
                         "battery_icon": "",
-                        "discharging_icon": " ",
-                        "charging_icon": " ",
-                        "charged_icon": " ",
+                        "discharging_icon": " ",
+                        "charging_icon": " ",
+                        "charged_icon": " ",
                         "color_background": true,
                         "charged_color": "#4caf50",
                         "charging_color": "#40c4ff",
                         "discharging_color": "#ff5722",
-                        "postfix": " "
+                        "postfix": "% "
                     }
                 },
                 {
@@ -129,8 +136,11 @@
                     "invert_powerline": true,
                     "leading_diamond": "",
                     "trailing_diamond": "\uE0B4",
-                    "background": "#2e9599",
-                    "foreground": "#111111"
+                    "background": "#61afef",
+                    "foreground": "#ffffff",
+                    "properties": {
+                        "time_format": "15:04 (Mon)"
+                    }
                 }
             ]
         }
@@ -138,5 +148,5 @@
     "final_space": true,
     "console_title": true,
     "console_title_style": "template",
-    "console_title_template": "{{ .Shell }} : {{ .Folder }}"
+    "console_title_template": "{{.User}}@{{.Host}} : {{.Folder}}"
 }
