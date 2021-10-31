@@ -1,4 +1,4 @@
-oh-my-posh --init --shell pwsh --config ~/customized.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~/mojada.omp.json | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 
