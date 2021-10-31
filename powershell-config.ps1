@@ -52,6 +52,6 @@ Set-Alias gacpe alias_git_add_commit_push_everything
 Set-Alias glog alias_git_log
 Set-Alias glp alias_git_log_pretty
 Set-Alias gsb alias_git_switch_branch
-Set-Alias cl alias_clear_screen 
+Set-Alias cl alias_clear_screen
 
 clear
