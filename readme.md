@@ -59,7 +59,7 @@ I assume that before you start the configuration, you have already installed suc
 
 - Done. The oh-my-posh with Mojada theme is ready to use now.
 
-  ![image-20211101071510180](.\img\image-20211101071510180.png)
+  ![image-20211101071510180](./img/image-20211101071510180.png)
 
 ## Mojada Aliases
 
