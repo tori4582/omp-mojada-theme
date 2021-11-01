@@ -86,7 +86,8 @@
                     "foreground": "#FFD54F",
                     "properties": {
                         "prefix": " ",
-                        "text": "{{if .Root}}#{{else}}${{end}}"
+                        "text": "{{if .Root}}#{{else}}${{end}}",
+                        "postfix": ""
                     }
                 }
             ]
