@@ -2,7 +2,7 @@
 
 *A theme and configuration for "oh-my-posh" on Windows PowerShell*.
 
-![image-20211101060110409](.\img\image-20211101060110409.png)
+![image-20211101060110409](./img/image-20211101060110409.png)
 
 - This theme is created based on the default theme of "oh-my-posh" is <code>jandedobbeleer.omp.json</code>. Customized with mostly Atom One Dark color scheme.
 -  The configuration sets up the cool stuffs for bulk of developer daily tasks:
@@ -21,7 +21,7 @@ Before we go, we need a better terminal application for Windows called "Windows 
 - https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701
 - **Note**: Windows Terminal is available on Windows 11. If you are using it, you can move to the next step.
 
-![image-20211101061438859](.\img\image-20211101061438859.png)
+![image-20211101061438859](./img/image-20211101061438859.png)
 
 ### Prerequisite 2: New version of PowerShell
 
@@ -29,7 +29,7 @@ The next thing is a new version of PowerShell to replace the legacy Windows Powe
 
 - **Get it from Microsoft Store**: https://www.microsoft.com/en-us/p/powershell/9mz1snwt0n5d
 
-![image-20211101061830869](.\img\image-20211101061830869.png)
+![image-20211101061830869](./img/image-20211101061830869.png)
 
 ### Prerequisite 3: A Powerline supported Font
 
@@ -49,7 +49,7 @@ I assume that before you start the configuration, you have already installed suc
 
 - Open "Windows Terminal" with "PowerShell" shell and change directory to the unzipped folder
 
-  ![image-20211101071022201](.\img\image-20211101071022201.png)
+  ![image-20211101071022201](./img/image-20211101071022201.png)
 
 - Execute the command, and just wait for it.
 
