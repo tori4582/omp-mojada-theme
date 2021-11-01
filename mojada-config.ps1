@@ -47,7 +47,9 @@ function alias_poweroff {
 function alias_reboot {
 	Restart-Computer
 }
-
+function alias_show {
+	explorer.exe .
+}
 
 Set-Alias gs alias_git_status
 Set-Alias gpush alias_git_push
@@ -62,5 +64,6 @@ Set-Alias gsb alias_git_switch_branch
 Set-Alias cl alias_clear_screen
 Set-Alias poweroff alias_poweroff
 Set-Alias reboot alias_reboot
+Set-Alias show alias_show
 
 clear
