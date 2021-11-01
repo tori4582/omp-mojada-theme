@@ -4,13 +4,15 @@
 
 ![image-20211101060110409](./img/image-20211101060110409.png)
 
-- This theme is created based on the default theme of "oh-my-posh" is <code>jandedobbeleer.omp.json</code>. Customized with mostly Atom One Dark color scheme.
--  The configuration sets up the cool stuffs for bulk of developer daily tasks:
-  - [Oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)
-  - [z](https://github.com/JannesMeyer/z.ps) directory jumping
-  - [Terminal-Icon](https://github.com/devblackops/Terminal-Icons): Better displaying for <code>dir</code> or <code>ls</code> with colorizing and icons
-  - History based recommendation
-  - Some command shortcut aliases
+This theme is created based on the default theme of "oh-my-posh" is <code>jandedobbeleer.omp.json</code>. Customized with mostly Atom One Dark color scheme.
+
+The configuration sets up the cool stuffs for bulk of developer daily tasks:
+
+- [Oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)
+- [z](https://github.com/JannesMeyer/z.ps) directory jumping
+- [Terminal-Icon](https://github.com/devblackops/Terminal-Icons): Better displaying for <code>dir</code> or <code>ls</code> with colorizing and icons
+- History based recommendation
+- Some command shortcut aliases
 
 ## Installation
 
